@@ -1,186 +1,234 @@
-  @mixin frame-setting($w, $h){
-    width: $w;
-    height: $h;    
-  }
-  @mixin background-border($bkg, $bd){
-    background: $bkg; 
-    border: $bd;
-  }   
-  
-  .ml2 {
-    font-weight: 900;
-    font-size: 3.5em;
-  }
-  
-  .ml2 .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-  .container{
-    @include frame-setting(100vw, 100vh);       
-    background-color:  rgb(243, 227, 227);
-  }
-  .heading-container{    
-    width: 60vw;
-    display: grid;     
-    grid-template-columns: minmax(10vw, 1fr) minmax(40vw, 1fr) minmax(10vw, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .heading {
-    width: 50vw;
-    background: rgb(219, 198, 198); 
-    border: 1px solid red;
-    @include grid-setting();
-    display: grid;      
-    grid-template-columns: repeat(auto-fill, minmax(9vw, 1fr));   
-    justify-items: center;
-    align-items: center;
-  }   
-  .menu {          
-    padding-top: 20px; 
-    padding-bottom: 20px;       
-  }
-  .menu-item {
-    text-decoration: none;
-    color: black;
-  }
-  .name-grid {
-      width: 30vw;
-      background-color: rgb(219, 198, 198);
-      display: block;
-      margin: 15vh auto 0 auto;      
-      text-align: center;
-      padding: 30px;
-  }
-  .name {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 30px;
-  }
-  .title {
-        padding-top: 20px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-  }
-  .outer {
-    width: 69vw;    
-    border-bottom: 1px solid red;
-    margin-bottom: 5vh;
-  }
-  .photo-grid{
-    width: 69vw;
-    padding: 10px 0 10px 10px;       
-    border: 1px solid red;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    row-gap: 1px;    
-    position: relative;
+@mixin frame-setting($w, $h){
+  width: $w;
+  height: $h;    
+}
+@mixin background-border($bkg, $bd){
+  background: $bkg; 
+  border: $bd;
+}   
+
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.container{
+  @include frame-setting(100vw, 100vh);       
+  background-color:  rgb(243, 227, 227);
+}
+.heading-container{    
+  width: 60vw;
+  display: grid;     
+  grid-template-columns: minmax(10vw, 1fr) minmax(40vw, 1fr) minmax(10vw, 1fr);
+  grid-template-rows: 1fr;
+}
+.heading {
+  width: 50vw;
+  background: rgb(219, 198, 198); 
+  border: 1px solid red;
+  @include grid-setting();
+  display: grid;      
+  grid-template-columns: repeat(auto-fill, minmax(9vw, 1fr));   
+  justify-items: center;
+  align-items: center;
+}   
+.menu {          
+  padding-top: 20px; 
+  padding-bottom: 20px;       
+}
+.menu-item {
+  text-decoration: none;
+  color: black;
+}
+.name-grid {
+    width: 30vw;
+    background-color: rgb(219, 198, 198);
+    display: block;
+    margin: 15vh auto 0 auto;      
     text-align: center;
-    color: white;
-    margin-bottom: 5vh;
-  }
-  .item {
-    @include frame-setting(16.5vw, 30vh);    
-    background-color: rgb(49, 47, 47);
-  }
-  .image {
-    width: 15vw;
-    height: 27vh;
-    object-fit: cover;
-    padding-top: 18px;    
-  }  
-  .centered {
-    width: 8vw;
-    height: 8vh;
-    background-color: rgb(248, 245, 245);  
-    border: 1px solid rgb(49, 47, 47);  
-    font-weight: 800;    
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  .about{        
-    top: 50%;
-    left: 14%;    
-    padding-left: 25px;    
-  }
+    padding: 30px;
+}
+.name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.title {
+      padding-top: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+}
+.outer {
+  width: 69vw;    
+  border-bottom: 1px solid red;
+  margin-bottom: 5vh;
+}
+.photo-grid{
+  width: 69vw;
+  padding: 10px 0 10px 10px;       
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+  row-gap: 1px;    
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 5vh;
+}
+.item {
+  @include frame-setting(16.5vw, 30vh);    
+  background-color: rgb(49, 47, 47);
+}
+.image {
+  width: 15vw;
+  height: 27vh;
+  object-fit: cover;
+  padding-top: 18px;    
+}  
+.centered {
+  width: 8vw;
+  height: 8vh;
+  background-color: rgb(248, 245, 245);  
+  border: 1px solid rgb(49, 47, 47);  
+  font-weight: 800;    
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.about{        
+  top: 50%;
+  left: 14%;    
+  padding-left: 25px;    
+}
 .skills {
-    top: 50%;
-    left: 39%;    
-    padding-left: 27px;    
+  top: 50%;
+  left: 39%;    
+  padding-left: 27px;    
 }
 .projects {
-    top: 50%;
-    left: 63%;    
-    padding-left: 15px;    
+  top: 50%;
+  left: 63%;    
+  padding-left: 15px;    
 }
 .contacts {
-    top: 50%;
-    left: 87%;    
-    padding-left: 18px;    
+  top: 50%;
+  left: 87%;    
+  padding-left: 18px;    
 }
 .menu-color {
-  color: rgb(49, 47, 47);
+color: rgb(49, 47, 47);
 }
-.who {
-  width: 69vw;
-  padding: 10px 0 10px 10px;       
-  border: 1px solid red;
-  margin-bottom: 5vh;
+.who, .how {
+width: 69vw;
+padding: 10px 0 10px 10px;       
+border: 1px solid red;
+margin-bottom: 5vh;
 }
-.whoamI, .acc, .whatcan {
-  font-size: 40px;
-  font-weight: 600;
-  padding-bottom: 30px;
+.whoamI, .acc, .whatcan, .howdo{
+font-size: 30px;
+font-weight: 600;
+padding-bottom: 30px;  
+text-transform: uppercase;
 }
 .myphoto {
-  width: 250px;
-  height: auto;
-  margin: 35px 0; 
-  display: block;
-  margin: 0 auto;  
+width: 250px;
+height: auto;
+margin: 35px 0; 
+display: block;
+margin: 0 auto;  
 }
 .text-frame {
-  font-size: 30px;
-  font-weight: 300;
-  margin: 80px 20px;
+font-size: 30px;
+font-weight: 300;
+margin: 80px 20px;
 }
 .text{
-  padding: 40px 0;
+padding: 40px 0;
+color: rgb(97, 15, 15);
 }
-.accomplishment, .what {
-  width: 69vw;
-  padding: 10px 0 10px 10px;       
-  border: 1px solid red;
-  margin-bottom: 5vh;
+.accomplishment, .what, .request {
+width: 69vw;
+padding: 10px 0 10px 10px;       
+border: 1px solid red;
+margin-bottom: 5vh;
 }
 .logo-frame {
-  padding: 0 120px;
+padding: 0 120px;
 }
 .logo {
-  width: 10vw;
-  height: auto;
+width: 10vw;
+height: auto;
 }
 .logo-bird {
-  width: 10vw;
-  height: 17vh;
-  object-fit: cover;
+width: 10vw;
+height: 20vh;
+object-fit: cover;
 }
 .centered-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.front {
+font-size: 20px;
+font-weight: 600;
+padding-top: 20px;
+padding-bottom: 20px;
+border: 1px solid red;
 }
 .link1 {
-  font-size: 20px;
-  color: rgb(97, 15, 15);
+padding-left: 15px;  
+font-size: 20px;
+font-weight: 800;
+color: rgb(97, 15, 15);
 }
 .link2 {
-  padding-left: 65px;
-  font-size: 20px;
-  color: rgb(97, 15, 15);
+padding-left: 20px;  
+font-size: 20px;
+font-weight: 800;
+color: rgb(97, 15, 15);
 }
 .link3 {
-  //padding-left: 50px;
-  font-size: 20px;
-  color: rgb(97, 15, 15);
+padding-left: 10px;  
+font-size: 20px;
+font-weight: 800;
+color: rgb(97, 15, 15);
+}
+.list {
+padding: 30px;
+}
+.list-item {
+letter-spacing: 0.3rem;
+font-weight: 600;
+padding: 10px;
+}
+.contact-frame {
+margin-top: 30px;
+}
+.contact {
+margin-top: 40px;
+padding: 10px;
+border: 1px solid red;
+font-size: 17px;
+color: rgb(97, 15, 15);
+font-weight: 600;
+}
+.request-frame {
+margin-top: 30px;
+}
+.request-button {
+border: 1px solid red;
+border-radius: 20px;
+}
+.github-frame {
+margin-top: 50px;
+}
+.github, .online {
+margin-left: 60px;
+font-size: 20px;
+font-weight: 800;
+color: rgb(13, 63, 156);
 }
