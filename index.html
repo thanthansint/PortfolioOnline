@@ -8,130 +8,223 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
     <title>Portfolio</title>
 </head>
-<body>
-    
-    <!-- <h1 class="ml2">Sunny mornings</h1> -->  
+<body>   
     <div class="container">
         <div class="outer">
             <div class="heading-container">
                 <div></div>
-                <div class="heading">
-                    <!--<div class="toggle-line"><i class="fa fa-bars" aria-hidden="true"></i></div>-->
-                    <div class="menu"><a class="menu-item" href="about.html">ABOUT</a></div>
-                    <div class="menu"><a class="menu-item" href="projects.html">PROJECTS</a></div>
-                    <div class="menu"><a class="menu-item" href="skills.html">SKILLS</a></div>
-                    <div class="menu"><a class="menu-item" href="contact.html">CONTACT</a></div>
-                    <div class="menu"><a class="menu-item" href="request.html">REQUEST</a></div>
+                <div class="row heading">                    
+                    <div class="menu col s12 m6"><a class="menu-item" href="#">ABOUT</a></div>
+                    <div class="menu col s12 m6"><a class="menu-item" href="#">PROJECTS</a></div>
+                    <div class="menu col s12 m6"><a class="menu-item" href="#">SKILLS</a></div>
+                    <div class="menu col s12 m6"><a class="menu-item" href="#">CONTACT</a></div>
+                    <div class="menu col s12 m6"><a class="menu-item" href="#">REQUEST</a></div>
                 </div>
                 <div></div>
             </div> 
-            <div class="row name-grid">
-                <div class="name col s12 m12 l12"><p>THAN THAN SINT</p></div>
-                <div class="title col s12 m12 l12"><p>Full-stack Web Developer</p></div>
+            <div class="row">
+                <div class="col s12 m3 l3 xl3 valign-wrapper">
+                    <h1 class="ml8">
+                        <span class="letters-container">
+                          <span class="letters letters-left">Hi</span>
+                          <span class="letters bang">!</span>
+                        </span>
+                        <span class="circle circle-white"></span>
+                        <span class="circle circle-dark"></span>
+                        <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+                      </h1>
+                </div>                
+                <div class="name-grid col s12 m6 l6 xl6">
+                    <div class="name col s12 m12 l12"><p class="ml2">THAN THAN SINT</p></div>
+                    <div class="title col s12 m12 l12"><p class="ml3">Full-stack Web Developer</p></div>
+                </div>
+            </div>
+                        
+        </div>
+        <div class="photo-grid row">
+            <div class="item row col s12">
+                <div class="card col s12">
+                    <div class="card-image">
+                        <img class="image" src="./image/about.jpg">
+                    </div>
+                    <div class="card-action">
+                        <a class="pink-text text-darken-4" href="#about">ABOUT</a>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="item row col s12">
+                <div class="card col s12">
+                    <div class="card-image">
+                        <img class="image" src="./image/colorful.png">
+                    </div>
+                    <div class="card-action">
+                        <a class="pink-text text-darken-4" href="#myskills">SKILLS</a>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="item row col s12">
+                <div class="card col s12">
+                    <div class="card-image">
+                        <img class="image" src="./image/Team-project.jpg">
+                    </div>
+                    <div class="card-action">
+                        <a class="pink-text text-darken-4" href="#accomplishments">PROJECTS</a>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="item row col s12">
+                <div class="card col s12">
+                    <div class="card-image">
+                        <img class="image" src="./image/ContactUs.jpg">
+                    </div>
+                    <div class="card-action">
+                        <a class="pink-text text-darken-4" href="#mycontacts">CONTACT</a>
+                    </div>                    
+                </div>                
             </div>            
         </div>
-        <div class="photo-grid ">
-            <div class="item">
-                <div><img class="image" src="./image/about.jpg"></div>
-                <div class="valign-wrapper centered about"><a class="menu-color" href="about.html">ABOUT</a></div>
-            </div>
-            <div class="item">
-                <div><img class="image " src="./image/Art.jpg"></div>
-                <div class="valign-wrapper centered skills"><a class="menu-color" href="about.html">SKILLS</a></div>
-            </div>
-            <div class="item">
-                <div><img class="image" src="./image/Team-project.jpg"></div>
-                <div class="valign-wrapper centered projects"><a class="menu-color" href="projects.html">PROJECTS</a></div>
-            </div>
-            <div class="item">
-                <div><img class="image" src="./image/ContactUs.jpg"></div>
-                <div class="valign-wrapper centered contacts"><a class="menu-color" href="contacct.html">CONTACT</a></div>
-            </div>
-        </div>
-        <div class="who">
+        <div id="about" class="who">
             <div class="col s12 m6 l6 xl6 row">
-                <div class="col s12"><p class="center-align whoamI">Who am I?</p></div>
-                <div><img src="./image/than.JPG" class="myphoto"></div>
-                <ul class="text-frame left-align">
-                    <li class="text">A Full-stack web developer</li>
-                    <li class="text">Have a lot of front-end and back-end knowledge</li>
-                    <li class="text">Am looking for a suitable job to apply my very fresh skills</li>
-                </ul>                 
+                <div class="col s12">
+                    <h1 class="ml11 center-align">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>                    
+                            <span class="whoamI letters">Who am I?</span>
+                        </span>
+                    </h1>                                        
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m4 l4"><img src="./image/than.JPG" class="myphoto"></div>
+                    <div class="col s12 m8 l8">
+                        <ul class="text-frame">
+                            <li class="text ml16">A Full-stack web developer</li>
+                            <li class="text ml17">Have a lot of front-end and back-end knowledge</li>
+                            <li class="text ml18">Am looking for a suitable job to apply my very fresh skills</li>
+                        </ul> 
+                    </div>
+                     
+                </div>                               
             </div>            
         </div>  
-        <div class="accomplishment">
+        <div id="accomplishments" class="accomplishment">
             <div class="col s12 m6 l6 xl6 row">
-                <div class="col s12"><p class="center-align acc">My Accomplishments</p></div>
+                <h1 class="ml111 center-align">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span> 
+                        <div class="col s12"><p class="acc letters">My Accomplishments</p></div>
+                    </span>
+                </h1>
+                
                 <div class="row logo-frame">
-                    <div class="valign-wrapper col s4 centered-logo">
-                        <div><img src="./image/okotoks-pizza-logo.png" class="circle logo"></div>                        
+                    <div class="valign-wrapper col s12 m4 l4 centered-logo">
+                        <div class="responsive-img"><img src="./image/okotoks-pizza-logo.png" class="circle logo"></div>                        
                     </div>
-                    <div class="valign-wrapper col s4 centered-logo">
-                        <div><img src="./image/birds-singing.jpg" class="circle logo-bird"></div>                        
+                    <div class="valign-wrapper col s12 m4 l4 centered-logo">
+                        <div class="responsive-img"><img src="./image/birds-singing.jpg" class="circle logo-bird"></div>                        
                     </div>
-                    <div class="valign-wrapper col s4 centered-logo">
-                        <div><img src="./image/mbt.jpg" class="circle logo"></div>                        
+                    <div class="valign-wrapper col s12 m4 l4 centered-logo">
+                        <div class="responsive-img"><img src="./image/mbt.jpg" class="circle logo"></div>                        
                     </div>                    
                 </div>
                 <div class="row github-frame">
-                    <div class="col s3 github right-align">Github Links ==></div>
-                    <div class="col s3"><a href="https://github.com/thanthansint/OkatoksPizza.git" class="link1">OkatokPizza</a></div>
-                    <div class="col s3"><a href="https://github.com/thanthansint/TweeterTwo.git" class="link2">Tweeter</a></div>
-                    <div class="col s3"><a href="https://github.com/thanthansint/MyanmarTemple.git" class="link3">MBT</a></div>
+                    <div class="col s12 m3 l3 github center-align">Github Links =></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://github.com/thanthansint/OkatoksPizza.git" class="link1">OkatokPizza</a></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://github.com/thanthansint/TweeterTwo.git" class="link2">Tweeter</a></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://github.com/thanthansint/MyanmarTemple.git" class="link3">MBT</a></div>
                 </div>
                 <div class="row online-frame">
-                    <div class="col s3 online right-align">Online Links ==></div>
-                    <div class="col s3"><a href="https://okatokspizza.ml/" class="link1">OkatoksPizza</a></div>
-                    <div class="col s3"><a href="https://tweeter.com" class="link2">Tweeter</a></div>
-                    <div class="col s3"><a href="https://myanmartemple.ml" class="link3">MBT</a></div>
+                    <div class="col s12 m3 l3 online center-align">Online Links =></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://okatokspizza.ml/" class="link1">OkatoksPizza</a></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://tweeter.com" class="link2">Tweeter</a></div>
+                    <div class="col s12 m3 l3 center-align"><a href="https://myanmartemple.ml" class="link3">MBT</a></div>
                 </div>
             </div>
         </div>  
-        <div class="what">
+        <div id="myskills" class="what">
             <div class="col s12 m6 l6 xl6 row">
-                <div class="col s12"><p class="center-align whatcan">My Skills</p></div>
+                <h1 class="ml1111 center-align">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span> 
+                        <div class="col s12"><p class="whatcan letters">My Skills</p></div>
+                    </span>
+                </h1>
+                
                 <div class="row">
-                    <div class="col s12 m6 l6 xl6 center-align"><p class="front">FRONT-END DEVELOPMENT</p>                    
-                        <ul class="list">
-                            <li class="list-item">HTML</li>
-                            <li class="list-item">CSS</li>
-                            <li class="list-item">SASS</li>
-                            <li class="list-item">JavaScript</li>
-                            <li class="list-item">Jquery</li>
-                            <li class="list-item">Vue</li>
+                    <div class="col s12 m6 l6 xl6 center-align">
+                        <h5 class="ml5">
+                            <span class="text-wrapper">
+                              <span class="line line1"></span>
+                              <span class="letters letters-left">FRONT-END</span>                          
+                              <span class="letters letters-right">DEVELOPMENT</span>
+                              <span class="line line2"></span>
+                            </span>
+                        </h5>                                        
+                        <ul class="list col s12">
+                            <h6 class="ml15">
+                                <li class="list-item word">HTML</li>
+                                <li class="list-item word">CSS</li>
+                                <li class="list-item word">SASS</li>
+                                <li class="list-item word">JavaScript</li>
+                                <li class="list-item word">Jquery</li>
+                                <li class="list-item word">Vue</li>
+                            </h6>                            
                         </ul>    
-                    </div>               
-                    <div class="col s12 m6 l6 xl6 center-align"><p class="front">BACK-END DEVELOPMENT</p>
-                        <ul class="list">                            
-                            <li class="list-item">PHP</li>
-                            <li class="list-item">Laravel</li>
-                            <li class="list-item">MySql</li>                        
+                    </div>    
+                    <div class="col s12 m6 l6 xl6 center-align">
+                        <h5 class="ml55">
+                            <span class="text-wrapper">
+                              <span class="line line1"></span>
+                              <span class="letters letters-left">BACK-END</span>                          
+                              <span class="letters letters-right">DEVELOPMENT</span>
+                              <span class="line line2"></span>
+                            </span>
+                        </h5> 
+                        <ul class="list col s12">    
+                            <h6 class="ml1515">
+                                <li class="list-item word">PHP</li>
+                                <li class="list-item word">Laravel</li>
+                                <li class="list-item word">MySql</li>  
+                            </h6>                
                         </ul> 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="how">
-            <div class="col s12 m6 l6 xl6 row">
-                <div class="col s12"><p class="center-align howdo">How do you reach me ?</p></div>
-                <div class="center-align"><a href="resume.html" class="btn-floating btn-large pink darken-4 waves-effect waves-light pulse">Resume</a></div>
+        <div id="mycontacts" class="how">
+            <div class="col s12 m6 l6 xl6">
+                <h1 class="ml22 center-align">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span> 
+                        <div class="col s12"><p class="center-align howdo letters">How do you reach me ?</p></div>
+                    </span>
+                </h1>
+                
+                <div class="center-align"><a href="resume.html" class=" btn-large pink darken-4 pulse">Resume</a></div>
                 <div class="row contact-frame">
-                    <div class="col s12 m6 l3"><p class="contact">Email: masintlay@gmail.com</p></div>                    
-                    <div class="col s12 m6 l3"><p class="contact">LinkedIn: https://www.linkedin.com/in/thanthansint-nyan/</p></div>
-                    <div class="col s12 m6 l3"><p class="contact">Phone: 403-604-1791</p></div>
-                    <div class="col s12 m6 l3"><p class="contact">Facebook: https://www.facebook.com/thanthansint/</p></div>                    
+                    <div class="col s12 m6 l6"><p class="contact">Email: masintlay@gmail.com</p></div>                    
+                    <div class="col s12 m6 l6"><p class="contact">LinkedIn: https://www.linkedin.com/in/thanthansint-nyan/</p></div>
+                    <div class="col s12 m6 l6"><p class="contact">Phone: 403-604-1791</p></div>
+                    <div class="col s12 m6 l6"><p class="contact">Facebook: https://www.facebook.com/thanthansint/</p></div>                    
                 </div>                
             </div>
         </div>  
         <div class="request">
-            <div class="col s12 m6 l6 xl6 row valign-wrapper">
-                <div class="col s6 m6 l6 center-align howdo">Any comment/request ?</div>
-                <div class="col s6 m6 l6 center-align request-frame"><a href="request.html" class="btn-large pink darken-4 request-button">Request</a></div>                
+            <div class="row valign-wrapper">
+                <h1 class="ml222 center-align">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span> 
+                        <div class="col s12 m12 l12 center-align howdo letters">Any comment?</div>
+                    </span>
+                </h1>
+                
+                <div class="col s12 m12 l12 center-align request-frame"><a href="request.html" class="btn-large pink darken-4 request-button">Comment</a></div>                
             </div>
         </div>  
     </div>     
